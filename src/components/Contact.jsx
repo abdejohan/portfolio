@@ -48,7 +48,7 @@ const Contact = () => {
 
 
     return (
-      <section>
+      <section id="contact" className="contact">
         <article>
         <h4>Lets Talk!</h4>
         <p>
@@ -56,7 +56,7 @@ const Contact = () => {
           Want to hire me? Or simply wanna chat? Feel free to reach out!
         </p>
         </article>
-        <form id="contact" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+        <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
 
           <TextField
             className={classes.textField}

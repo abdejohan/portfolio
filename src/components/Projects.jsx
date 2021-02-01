@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import LaunchIcon from '@material-ui/icons/Launch';
 
 // Material-ui stuff for the card component
 import Card from '@material-ui/core/Card';
@@ -16,7 +17,7 @@ import weatherImage from "../images/weatherImage.jpg";
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: "320px",
+    maxWidth: "300px",
     display: "flex",
     flexFlow: "column nowrap",
     alignItems: "flex-start",
@@ -27,14 +28,14 @@ const useStyles = makeStyles(() => ({
   },
   ul: {
     alignItems: "flex-start",
-    justifyContent: "flex-start !important",
-  },
-  li: {
-    width: "320px",
   },
   cardButton: {
-    fontSize: "1.6rem",
+    fontSize: "1.8rem",
     fontWeight: "700",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexflow: "row nowrap",
   },
   cardUl: {
     justifyContent: "flex-start !important",
@@ -49,7 +50,12 @@ const useStyles = makeStyles(() => ({
   cardHeader: {
     color: "#37123c",
     fontWeight: "800",
-  }
+  },
+  icons: {
+    width: "15px !important",
+    height: "15px !important",
+    marginLeft: "5px",
+  },
 }));
 
 const Projects = () => {
@@ -57,6 +63,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
+      <h4 style={{width: "92%", maxWidth: "930px"}}>Projects</h4>
       <ul className={classes.ul}>
         <li className={classes.li}>
           <Card raised={true}className={classes.root}>
@@ -84,10 +91,10 @@ const Projects = () => {
             </CardContent>
             <CardActions>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">View Site</a>
+                <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Code @ Github</a>
+                <a className={classes.cardButton} href="#">Code @ Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
@@ -114,10 +121,10 @@ const Projects = () => {
             </CardContent>
             <CardActions>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">View Site</a>
+                <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Code @ Github</a>
+                <a className={classes.cardButton} href="#">Code @ Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
@@ -144,10 +151,10 @@ const Projects = () => {
             </CardContent>
             <CardActions>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">View Site</a>
+                <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Code @ Github</a>
+                <a className={classes.cardButton} href="#">Code @ Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>

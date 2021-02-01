@@ -18,7 +18,8 @@ const About = () => {
   return (
     <section id="about">
       <article>
-        <h1>Hi! I am Johan 👋</h1>
+        <h1>Hi!</h1>
+        <h1> I am Johan, 👋</h1>
         <h3>a fullstack web developer student @ <a className="bold" href="https://chasacademy.se">Chas Academy</a></h3>
         <h6 className="italic">Here are just a few things my education includes:</h6>
         <ul className={classes.ul}>
