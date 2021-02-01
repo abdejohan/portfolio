@@ -2,7 +2,7 @@
 
 Check it out!
 
-Hosted at Binero: [wwww.abde.johan.chas.academy](http://abde.johan.chas.academy)
+Hosted at Binero: [wwww.johan.abde.chas.academy](http://johan.abde.chas.academy)
 
 ## Built With
 
