@@ -22,20 +22,20 @@ const About = () => {
         <h3>a fullstack web developer student @ <a className="bold" href="https://chasacademy.se">Chas Academy</a></h3>
         <h6 className="italic">Here are just a few things my education includes:</h6>
         <ul className={classes.ul}>
-          <li className={classes.li}>Advanced Javascript</li>
-          <li className={classes.li}>React</li>
-          <li className={classes.li}>Node.js</li>
-          <li className={classes.li}>Angular</li>
-          <li className={classes.li}>Agile Development</li>
-          <li className={classes.li}>Typescript</li>
-          <li className={classes.li}>UX/UI</li>
-          <li className={classes.li}>Next.js</li>
-          <li className={classes.li}>Figma</li>
-          <li className={classes.li}>Backend Development</li>
-          <li className={classes.li}>Express.js</li>
-          <li className={classes.li}>PHP</li>
-          <li className={classes.li}>mySQL</li>
-          <li className={classes.li}>MongoDB</li>
+          <li className={`shadow-md ${classes.li}`}>Advanced Javascript</li>
+          <li className={`shadow-md ${classes.li}`}>React</li>
+          <li className={`shadow-md ${classes.li}`}>Node.js</li>
+          <li className={`shadow-md ${classes.li}`}>Angular</li>
+          <li className={`shadow-md ${classes.li}`}>Agile Development</li>
+          <li className={`shadow-md ${classes.li}`}>Typescript</li>
+          <li className={`shadow-md ${classes.li}`}>UX/UI</li>
+          <li className={`shadow-md ${classes.li}`}>Next.js</li>
+          <li className={`shadow-md ${classes.li}`}>Figma</li>
+          <li className={`shadow-md ${classes.li}`}>Backend Development</li>
+          <li className={`shadow-md ${classes.li}`}>Express.js</li>
+          <li className={`shadow-md ${classes.li}`}>PHP</li>
+          <li className={`shadow-md ${classes.li}`}>mySQL</li>
+          <li className={`shadow-md ${classes.li}`}>MongoDB</li>
         </ul>
         <p>
           And of course, a lot more! <br/>
