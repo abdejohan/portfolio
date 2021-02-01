@@ -91,10 +91,10 @@ const Projects = () => {
             </CardContent>
             <CardActions>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="https://u11-fullstack-c0k39qdes.vercel.app/">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Github <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="https://github.com/abdejohan/cookbook">Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
@@ -121,10 +121,10 @@ const Projects = () => {
             </CardContent>
             <CardActions>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="http://movie.johan.abde.chas.academy/">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Github <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="https://github.com/abdejohan/movie-app">Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
@@ -151,10 +151,10 @@ const Projects = () => {
             </CardContent>
             <CardActions>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="http://weather.johan.abde.chas.academy/">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Github <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="https://github.com/abdejohan/weather-app">Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
