@@ -50,6 +50,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
 }
 
 article {
@@ -58,6 +59,28 @@ article {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+}
+
+form {
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+input,
+textarea {
+  opacity: 1 !important;
+  font-size: 2rem !important;
+  width: 100% !important;
+  font-weight: 600 !important;
+}
+
+.submitButton:hover {
+  background-color: pink;
 }
 
 .shadow {
@@ -81,4 +104,22 @@ article {
 .MuiCardActions-root,
 .MuiCardActions-spacing {
   padding-top: 0px !important;
+}
+
+.MuiFilledInput-multiline {
+}
+
+.MuiInputBase-input,
+.MuiFilledInput-input,
+.MuiFilledInput-multiline {
+  padding: 10px !important;
+}
+
+.MuiInputBase-root,
+.MuiFilledInput-root,
+.MuiFilledInput-underline,
+.MuiInputBase-formControl,
+.MuiInputBase-multiline,
+.MuiFilledInput-multiline {
+  padding: 0px !important;
 }

@@ -16,7 +16,7 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <section>
+    <section id="about">
       <article>
         <h1>Hi! I am Johan 👋</h1>
         <h3>a fullstack web developer student @ <a className="bold" href="https://chasacademy.se">Chas Academy</a></h3>

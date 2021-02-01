@@ -29,6 +29,9 @@ const useStyles = makeStyles(() => ({
     alignItems: "flex-start",
     justifyContent: "flex-start !important",
   },
+  li: {
+    width: "320px",
+  },
   cardButton: {
     fontSize: "1.6rem",
     fontWeight: "700",
@@ -53,10 +56,10 @@ const Projects = () => {
   const classes = useStyles();
 
   return (
-    <section>
+    <section id="projects">
       <ul className={classes.ul}>
         <li className={classes.li}>
-          <Card raised="true" className={classes.root}>
+          <Card raised={true}className={classes.root}>
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -80,17 +83,17 @@ const Projects = () => {
               </ul>
             </CardContent>
             <CardActions>
-              <Button size="big" color="primary">
+              <Button size="large" color="primary">
                 <a className={classes.cardButton} href="#">View Site</a>
               </Button>
-              <Button size="big" color="primary">
+              <Button size="large" color="primary">
                 <a className={classes.cardButton} href="#">Code @ Github</a>
               </Button>
             </CardActions>
           </Card>
         </li>
         <li className={classes.li}>
-          <Card raised="true" className={classes.root}>
+          <Card raised={true} className={classes.root}>
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -110,17 +113,17 @@ const Projects = () => {
               </ul>
             </CardContent>
             <CardActions>
-              <Button size="big" color="primary">
+              <Button size="large" color="primary">
                 <a className={classes.cardButton} href="#">View Site</a>
               </Button>
-              <Button size="big" color="primary">
+              <Button size="large" color="primary">
                 <a className={classes.cardButton} href="#">Code @ Github</a>
               </Button>
             </CardActions>
           </Card>
         </li>
         <li className={classes.li}>
-          <Card raised="true" className={classes.root}>
+          <Card raised={true} className={classes.root}>
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -140,10 +143,10 @@ const Projects = () => {
               </ul>
             </CardContent>
             <CardActions>
-              <Button size="big" color="primary">
+              <Button size="large" color="primary">
                 <a className={classes.cardButton} href="#">View Site</a>
               </Button>
-              <Button size="big" color="primary">
+              <Button size="large" color="primary">
                 <a className={classes.cardButton} href="#">Code @ Github</a>
               </Button>
             </CardActions>
