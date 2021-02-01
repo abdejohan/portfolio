@@ -2,6 +2,14 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
+  ul: {
+    justifyContent: "flex-start !important",
+  },
+  li: {
+    backgroundColor: "rgba(255,255,255,0.5)",
+    padding: "5px 10px",
+    borderRadius: "10px",
+  },
 }));
 
 const About = () => {
@@ -11,21 +19,23 @@ const About = () => {
     <section>
       <article>
         <h1>Hi! I am Johan 👋</h1>
+        <h3>a fullstack web developer student @ <a className="bold" href="https://chasacademy.se">Chas Academy</a></h3>
+        <h6 className="italic">Here are just a few things my education includes:</h6>
         <ul className={classes.ul}>
-          <li>Advanced Javascript</li>
-          <li>React</li>
-          <li>React Native</li>
-          <li>Agile Development</li>
-          <li>Typescript</li>
-          <li>UX/UI</li>
-          <li>Angular</li>
-          <li>Backend Development</li>
-          <li>Next.js</li>
-          <li>Express.js</li>
-          <li>PHP</li>
-          <li>mySQL</li>
-          <li>Node.js</li>
-          <li>MongoDB</li>
+          <li className={classes.li}>Advanced Javascript</li>
+          <li className={classes.li}>React</li>
+          <li className={classes.li}>Node.js</li>
+          <li className={classes.li}>Angular</li>
+          <li className={classes.li}>Agile Development</li>
+          <li className={classes.li}>Typescript</li>
+          <li className={classes.li}>UX/UI</li>
+          <li className={classes.li}>Next.js</li>
+          <li className={classes.li}>Figma</li>
+          <li className={classes.li}>Backend Development</li>
+          <li className={classes.li}>Express.js</li>
+          <li className={classes.li}>PHP</li>
+          <li className={classes.li}>mySQL</li>
+          <li className={classes.li}>MongoDB</li>
         </ul>
         <p>
           And of course, a lot more! <br/>

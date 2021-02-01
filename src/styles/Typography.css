@@ -8,58 +8,81 @@ p {
   font-size: 3rem;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
 h1 {
   font-size: 8rem;
+  width: 100%;
 }
 
 h2 {
   font-size: 7rem;
+  width: 100%;
 }
 
 h3 {
   font-size: 6rem;
+  width: 100%;
 }
 
 h4 {
   font-size: 5rem;
+  width: 100%;
 }
 
 h5 {
   font-size: 4rem;
+  width: 100%;
 }
 
 h6 {
   font-size: 3rem;
+  width: 100%;
 }
 
 .h1 {
   font-size: 8rem;
+  width: 100%;
 }
 
 .h2 {
   font-size: 7rem;
+  width: 100%;
 }
 
 .h3 {
   font-size: 6rem;
+  width: 100%;
 }
 
 .h4 {
   font-size: 5rem;
+  width: 100%;
 }
 
 .h5 {
   font-size: 4rem;
+  width: 100%;
 }
 
 .h6 {
   font-size: 3rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
   html,
   body {
-    font-size: 6px;
+    font-size: 4px;
+  }
+  section {
+    padding: 20px;
   }
 }
 
@@ -67,5 +90,8 @@ h6 {
   html,
   body {
     font-size: 8px;
+  }
+  section {
+    padding: 40px;
   }
 }
