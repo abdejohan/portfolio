@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from '@material-ui/core/TextField';
 import { useForm } from "react-hook-form";
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -16,9 +17,18 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
     border: "none",
     backgroundColor: "coral",
-
-    
   },
+  successBox: {
+    maxWidth: "300px",
+    border: "1px solid white",
+    borderRadius: "5px",
+    padding: "20px",
+    marginTop: "20px",
+  },
+  icon: {
+    width: "30px",
+    height: "30px",
+  }
 }));
 
 const Contact = () => {
@@ -40,9 +50,9 @@ const Contact = () => {
   const onSubmit = (data, e) => {
     const { name, email, message } = data;
     const templateId = "template_mzwzaup";
-    const serviceID = "johan.abde@chasacademy.se";
+    const serviceID = "service_y24txsj";
     sendFeedback(serviceID, templateId, { name, email, message })
-    setSuccessMessage("Success! Thank you and i´ll get back tou you soon! 🍩 ☕");
+    setSuccessMessage("Success! Now Go award yourself with coffee and i'll get back too you soon!");
     e.target.reset();
   }
 
@@ -96,12 +106,7 @@ const Contact = () => {
         
           <input className={`submitButton shadow-md ${classes.submitBttn}`} value="SUBMIT" type="submit" />
         </form>
-        {successMessage !== null && 
-          <article><p>{successMessage}</p><button
-            type="button"
-            onClick={() => {setSuccessMessage(null)}}>Got it!</button>
-          </article>
-        }
+        {successMessage !== null && <p className={classes.successBox}>{ successMessage }<LocalCafeIcon className={classes.icon}/></p>}
       </section>
     )
 };
