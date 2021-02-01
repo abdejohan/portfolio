@@ -94,7 +94,7 @@ const Projects = () => {
                 <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Code @ Github <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="#">Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
@@ -124,7 +124,7 @@ const Projects = () => {
                 <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Code @ Github <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="#">Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
@@ -154,7 +154,7 @@ const Projects = () => {
                 <a className={classes.cardButton} href="#">View Site <LaunchIcon className={classes.icons}/></a>
               </Button>
               <Button size="large" color="primary">
-                <a className={classes.cardButton} href="#">Code @ Github <LaunchIcon className={classes.icons}/></a>
+                <a className={classes.cardButton} href="#">Github <LaunchIcon className={classes.icons}/></a>
               </Button>
             </CardActions>
           </Card>
