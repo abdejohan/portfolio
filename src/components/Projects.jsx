@@ -81,7 +81,7 @@ const Projects = () => {
             </CardActionArea>
             <CardContent>
               <h6 className={classes.cardHeader}>
-                Allergikollen
+                Allergikollen (WIP)
               </h6>
               <p className="sm-p padding">
                 Users can add their own allergens to a list and then scan any item with a barcode.
@@ -95,9 +95,6 @@ const Projects = () => {
               </ul>
             </CardContent>
             <CardActions>
-              <Button size="large" color="primary">
-                <a className={classes.cardButton} href="https://u11-fullstack-c0k39qdes.vercel.app/">View Site <LaunchIcon className={classes.icons}/></a>
-              </Button>
               <Button size="large" color="primary">
                 <a className={classes.cardButton} href="https://github.com/abdejohan/allergikollen">Github <LaunchIcon className={classes.icons}/></a>
               </Button>
