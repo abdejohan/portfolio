@@ -14,6 +14,7 @@ import Button from '@material-ui/core/Button';
 import movieImage from "../images/movieImage.jpg";
 import cookbook from "../images/cookbook.jpg";
 import weatherImage from "../images/weatherImage.jpg";
+import allergikollen1 from "../images/allergikollen1.jpg";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -25,6 +26,7 @@ const useStyles = makeStyles(() => ({
   },
   media: {
     height: 250,
+    borderBottom: "3px solid purple",
   },
   ul: {
     alignItems: "flex-start",
@@ -46,6 +48,7 @@ const useStyles = makeStyles(() => ({
     padding: "3px 6px",
     borderRadius: "4px",
     color: "#945d5e",
+    fontSize: "14px"
   },
   cardHeader: {
     color: "#37123c",
@@ -68,6 +71,42 @@ const Projects = () => {
         <li className={classes.li}>
           <Card raised={true}className={classes.root}>
             <CardActionArea>
+              <div className="faded">
+                <CardMedia
+                  className={classes.media}
+                  image={allergikollen1}
+                  title="Allergikollen project thumbnail"
+                  />
+              </div>
+            </CardActionArea>
+            <CardContent>
+              <h6 className={classes.cardHeader}>
+                Allergikollen
+              </h6>
+              <p className="sm-p padding">
+                Users can add their own allergens to a list and then scan any item with a barcode.
+                The application will inform if any of the allergens was found.
+              </p>
+              <ul className={classes.cardUl}>
+                <li className={`shadow ${classes.cardLi}`}>React Native</li>
+                <li className={`shadow ${classes.cardLi}`}>Expo</li>
+                <li className={`shadow ${classes.cardLi}`}>UI Kitten</li>
+                <li className={`shadow ${classes.cardLi}`}>Figma</li>
+              </ul>
+            </CardContent>
+            <CardActions>
+              <Button size="large" color="primary">
+                <a className={classes.cardButton} href="https://u11-fullstack-c0k39qdes.vercel.app/">View Site <LaunchIcon className={classes.icons}/></a>
+              </Button>
+              <Button size="large" color="primary">
+                <a className={classes.cardButton} href="https://github.com/abdejohan/allergikollen">Github <LaunchIcon className={classes.icons}/></a>
+              </Button>
+            </CardActions>
+          </Card>
+        </li>
+        <li className={classes.li}>
+          <Card raised={true}className={classes.root}>
+            <CardActionArea>
               <CardMedia
                 className={classes.media}
                 image={cookbook}
@@ -76,9 +115,9 @@ const Projects = () => {
             </CardActionArea>
             <CardContent>
               <h6 className={classes.cardHeader}>
-                Virtual Cookbook
+                Virtual cookbook
               </h6>
-              <p className="sm-p">
+              <p className="sm-p padding">
                 Store your favorite recipes and share them with your followers in a easy-to-read format.
               </p>
               <ul className={classes.cardUl}>
@@ -110,9 +149,9 @@ const Projects = () => {
             </CardActionArea>
             <CardContent>
               <h6 className={classes.cardHeader}>
-                Weather Forecast
+                Weather forecast
               </h6>
-              <p className="sm-p">
+              <p className="sm-p padding">
                 Weather forecast service that fetches weather data from a API.
               </p>
               <ul className={classes.cardUl}>
@@ -142,7 +181,7 @@ const Projects = () => {
               <h6 className={classes.cardHeader}>
                 Movie database
               </h6>
-              <p className="sm-p">
+              <p className="sm-p padding">
                 Users can search for any movie or actor and get som basic information from a API.
               </p>
               <ul className={classes.cardUl}>
