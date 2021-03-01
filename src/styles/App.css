@@ -97,6 +97,12 @@ footer {
   padding: 0px 10px;
 }
 
+.padding {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
 .submitButton:hover {
   background-color: pink;
 }
@@ -149,4 +155,11 @@ footer {
 .MuiInputBase-multiline,
 .MuiFilledInput-multiline {
   padding: 0px !important;
+}
+
+@media (max-width: 600px) {
+  .footer-ul {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }

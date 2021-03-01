@@ -43,7 +43,8 @@ const Footer = () => {
       </ul>
       <hr className={classes.hr}/>
       <ul className="footer-ul">
-        <li className="solo-link">This site was made by Johan Abdé @</li>
+        <li className="solo-link">This site was made by Johan Abdé</li>
+        <li className="solo-link">@</li>
         <li><a className="solo-link" href="https://chasacademy.se">Chas Academy</a></li>
       </ul>
     </footer>
