@@ -140,8 +140,8 @@ const Projects = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={movieImage}
-                title="movie project thumbnail"
+                image={weatherImage}
+                title="weather project thumbnail"
               />
             </CardActionArea>
             <CardContent>
@@ -170,8 +170,8 @@ const Projects = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image={weatherImage}
-                title="weather project thumbnail"
+                image={movieImage}
+                title="movie project thumbnail"
               />
             </CardActionArea>
             <CardContent>
