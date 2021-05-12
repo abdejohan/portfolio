@@ -8,6 +8,11 @@ p {
   font-size: 3rem;
 }
 
+.plain-text {
+  color: #dce1e9;
+  font-size: 20px;
+}
+
 .sm-p {
   font-size: 2.3rem;
   letter-spacing: 1px;

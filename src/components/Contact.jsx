@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from '@material-ui/core/TextField';
 import { useForm } from "react-hook-form";
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
-
-
+import SendIcon from '@material-ui/icons/Send';
+import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 const useStyles = makeStyles((theme) => ({
   textField: {
     width: "100%",
@@ -13,13 +13,18 @@ const useStyles = makeStyles((theme) => ({
   },
   submitBttn: {
     fontSize: "2rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontWeight: "600",
     borderRadius: "4px",
     padding: "10px",
     border: "none",
     backgroundColor: "coral",
+    width: "100%",
   },
   successBox: {
-    maxWidth: "300px",
+    maxWidth: "800px",
     border: "1px solid white",
     borderRadius: "5px",
     padding: "20px",
@@ -28,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     width: "30px",
     height: "30px",
+    marginLeft: "20px",
   }
 }));
 
@@ -52,7 +58,7 @@ const Contact = () => {
     const templateId = "template_mzwzaup";
     const serviceID = "service_y24txsj";
     sendFeedback(serviceID, templateId, { name, email, message })
-    setSuccessMessage("Success! Now Go award yourself with coffee and i'll get back too you soon!");
+    setSuccessMessage("Thank you! Award yourself with some coffee and i'll get back too you soon!");
     e.target.reset();
   }
 
@@ -61,7 +67,7 @@ const Contact = () => {
       <section id="contact" className="contact">
         <article>
         <h4>Lets Talk!</h4>
-        <p>
+        <p className="plain-text">
           Do you have a project in mind? Need help with something? 
           Want to hire me? Or simply wanna chat? Feel free to reach out!
         </p>
@@ -104,7 +110,9 @@ const Contact = () => {
           />
           {errors.message && <span>Atleast wright me something :(</span>}
         
-          <input className={`submitButton shadow-md ${classes.submitBttn}`} value="SUBMIT" type="submit" />
+          <button className={`submitButton shadow-md ${classes.submitBttn}`} type="submit">
+            SEND <FlightTakeoffIcon fontSize="small" className={classes.icon}/>
+          </button>
         </form>
         {successMessage !== null && <p className={classes.successBox}>{ successMessage }<LocalCafeIcon className={classes.icon}/></p>}
       </section>

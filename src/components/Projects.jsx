@@ -18,7 +18,8 @@ import allergikollen1 from "../images/allergikollen1.jpg";
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: "300px",
+    minWidth: "300px",
+    maxWidth: "350px",
     display: "flex",
     flexFlow: "column nowrap",
     alignItems: "flex-start",
@@ -30,6 +31,7 @@ const useStyles = makeStyles(() => ({
   },
   ul: {
     alignItems: "flex-start",
+    maxWidth: "800px",
   },
   cardButton: {
     fontSize: "1.8rem",
@@ -66,18 +68,16 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <h4 style={{width: "92%", maxWidth: "930px"}}>Projects</h4>
+      <h4 style={{maxWidth: "700px"}}>Projects</h4>
       <ul className={classes.ul}>
         <li className={classes.li}>
           <Card raised={true}className={classes.root}>
             <CardActionArea>
-              <div className="faded">
-                <CardMedia
-                  className={classes.media}
-                  image={allergikollen1}
-                  title="Allergikollen project thumbnail"
-                  />
-              </div>
+              <CardMedia
+                className={classes.media}
+                image={allergikollen1}
+                title="Allergikollen project thumbnail"
+                />
             </CardActionArea>
             <CardContent>
               <h6 className={classes.cardHeader}>
