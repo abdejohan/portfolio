@@ -98,16 +98,17 @@ footer {
 }
 
 .welcome-section {
-  padding: 120px 0px;
-  max-width: 450px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  max-width: 600px;
 }
 
 .xp-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 .w500 {

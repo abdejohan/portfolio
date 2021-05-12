@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from '@material-ui/core/TextField';
 import { useForm } from "react-hook-form";
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
-import SendIcon from '@material-ui/icons/Send';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 const useStyles = makeStyles((theme) => ({
   textField: {
@@ -68,7 +67,9 @@ const Contact = () => {
         <article>
         <h4>Lets Talk!</h4>
         <p className="plain-text">
-          Do you have a project in mind? Need help with something? 
+          Want to see what im working on right now?
+          Need help with something? 
+          Do you have a project in mind? 
           Want to hire me? Or simply wanna chat? Feel free to reach out!
         </p>
         </article>
